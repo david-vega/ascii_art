@@ -6,6 +6,8 @@
   %b Text:
   %pre
     = @post.text
+  %img{:alt => "Static Map of #{@post.city}, #{@post.state}",
+             :src => "http://maps.google.com/maps/api/staticmap?center=#{@post.city},#{@post.state}&zoom=9&size=300x300&maptype=roadmap&sensor=false"}
 = link_to 'Edit', edit_post_path(@post)
 |
 = link_to 'Back', posts_path

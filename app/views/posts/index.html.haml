@@ -12,6 +12,9 @@
       %td
         %pre
           = post.text
+      %td
+        %img{:alt => "Static Map of #{post.city}, #{post.state}",
+             :src => "http://maps.google.com/maps/api/staticmap?center=#{post.city},#{post.state}&zoom=9&size=300x300&maptype=roadmap&sensor=false"}
       %td= link_to 'Show', post
       %td= link_to 'Edit', edit_post_path(post)
       %td= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }
