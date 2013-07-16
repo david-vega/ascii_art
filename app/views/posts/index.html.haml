@@ -9,7 +9,9 @@
   - @posts.each do |post|
     %tr
       %td= post.title
-      %td= post.text
+      %td
+        %pre
+          = post.text
       %td= link_to 'Show', post
       %td= link_to 'Edit', edit_post_path(post)
       %td= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }
