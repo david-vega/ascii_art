@@ -1,22 +1,21 @@
 %h1 Listing posts
-%table
-  %tr
-    %th Title
-    %th Text
-    %th
-    %th
-    %th
-  - @posts.each do |post|
-    %tr
-      %td= post.title
-      %td
-        %pre
-          = post.text
-      %td
-        %img{:alt => "Static Map of #{post.city}, #{post.state}",
-             :src => "http://maps.google.com/maps/api/staticmap?center=#{post.city},#{post.state}&zoom=9&size=300x300&maptype=roadmap&sensor=false"}
-      %td= link_to 'Show', post
-      %td= link_to 'Edit', edit_post_path(post)
-      %td= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }
+%hr
+
+- @posts.each do |post|
+  %h2= post.title
+
+  %p
+    %pre
+      = post.text
+
+  %p
+    %img{:alt => "Static Map of #{post.city}, #{post.state}",
+         :src => "http://maps.google.com/maps/api/staticmap?center=#{post.city},#{post.state}&zoom=9&size=300x300&maptype=roadmap&sensor=false"}
+  %p
+    = link_to 'Show', post
+    = link_to 'Edit', edit_post_path(post)
+    = link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }
+  %hr
+
 %br/
 = link_to 'New Post', new_post_path
