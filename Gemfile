@@ -11,9 +11,14 @@ group :assets do
   gem 'uglifier'
 end
 
-group :development do
+group :test, :development do
   gem 'pry'
+  gem 'pry-debugger'
   gem 'rspec-rails'
+  gem 'simplecov'
+  gem 'spork'
+  gem 'spork-rails'
+  gem 'nyan-cat-formatter'
 end
 
 gem 'jquery-rails'
