@@ -1,5 +1,5 @@
 == Ascii Art
 
-  This is a Ascii Art web application
+This is a Ascii Art web application
 
 Fell free to use it as you wish
