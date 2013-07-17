@@ -1,1 +1,5 @@
-= link_to 'Sign in with Twitter', '/auth/twitter'
+- if current_user
+  Sign in as: #{current_user.name}
+  = link_to 'Sign Out', signout_path
+- else
+  = link_to 'Sign in with Twitter', '/auth/twitter'
