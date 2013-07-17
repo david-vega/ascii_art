@@ -3,3 +3,12 @@
 This is a Ascii Art web application
 
 Fell free to use it as you wish
+
+=== Installation
+ 
+1. Clone the repo
+2. Create a new _config/twitter.yml_ file and insert your twitter keys, you can check the _twitter.yml.example_
+3. Install the gems (bundle install)
+4. Run the migrations
+
+And you are ready to go enjoy :)
