@@ -1,0 +1,13 @@
+# replace with the correct credentials
+
+development:
+  app_id: consumer_key
+  secret: consumer_secret
+
+test:
+  app_id: consumer_key
+  secret: consumer_secret
+
+production:
+  app_id: consumer_key
+  secret: consumer_secret
