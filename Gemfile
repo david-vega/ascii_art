@@ -4,6 +4,8 @@ gem 'rails', '3.2.13'
 gem 'haml'
 gem 'sass'
 gem 'sqlite3'
+gem 'omniauth'
+gem 'omniauth-twitter'
 
 group :assets do
   gem 'sass-rails'
