@@ -1,7 +1,8 @@
-- if current_user
-  Sign in as: #{current_user.name}
-  = link_to 'Sign Out', signout_path
-  %br
-  = link_to 'New Post', new_post_path
-- else
-  = link_to 'Sign in with Twitter', '/auth/twitter'
+#header
+  - if current_user
+    Sign in as: #{current_user.name}
+    = link_to 'Sign Out', signout_path
+    %br
+    = link_to 'New Post', new_post_path
+  - else
+    = link_to 'Sign in with Twitter', '/auth/twitter'

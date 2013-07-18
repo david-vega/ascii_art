@@ -6,9 +6,8 @@
     = javascript_include_tag "application"
     = csrf_meta_tags
   %body
-    #header
-      = render 'shared/header'
+    = render 'shared/header'
     #ascii_art_container
+      =render 'shared/notice'
       = yield
-    #footer
-      = render 'shared/footer'
+    = render 'shared/footer'

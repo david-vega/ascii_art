@@ -36,7 +36,8 @@ class PostsController < ApplicationController
     @post = Post.new(params[:post])
 
     respond_to do |format|
-      if @post.save
+      current_user.posts << @post
+      if current_user.save!
         format.html { redirect_to @post, notice: 'Post was successfully created.' }
         format.json { render json: @post, status: :created, location: @post }
       else
