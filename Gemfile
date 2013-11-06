@@ -5,6 +5,7 @@ gem 'haml'
 gem 'sass'
 gem 'sqlite3'
 gem 'omniauth'
+gem 'omniauth-facebook'
 gem 'omniauth-twitter'
 
 group :assets do

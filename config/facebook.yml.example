@@ -1,0 +1,14 @@
+development:
+  app_id: 55CXCXXXXXXXXXX
+  secret: 26xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+  url: http://localhost:3000
+
+test:
+  app_id: 55CXCXXXXXXXXXX
+  secret: 26xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+  url: http://localhost:3000
+
+production:
+  app_id: 55CXCXXXXXXXXXX
+  secret: 26xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+  url: http://app.mightytwenty.com
